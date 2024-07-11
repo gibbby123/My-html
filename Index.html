@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Social Media Links</title>
+    <style>
+        body {
+            background-color: #F5F5DC; /* Beige background */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center align items vertically */
+            min-height: 100vh;
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align items horizontally */
+            gap: 20px;
+            padding: 20px;
+            max-width: 600px; /* Limit width for better readability */
+        }
+        .box {
+            background-color: #D2B48C; /* Light brown box */
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Full width on mobile */
+            height: 80px; /* Made the box shorter */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px; /* Adjusted text size for mobile */
+            font-weight: bold; /* Made text bold */
+            font-family: "Times New Roman", Times, serif; /* Ensures the rest of the text uses Times New Roman */
+        }
+        .username {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px; /* Added margin to separate from social media links */
+        }
+        .username img {
+            width: 100px; /* Adjust image size as needed */
+            height: auto;
+            border-radius: 50%; /* Make the image round */
+        }
+        .username p {
+            margin: 0;
+            font-size: 30px; /* Adjusted font size for mobile */
+            font-family: Arial, sans-serif; /* Use Arial for the username */
+        }
+        .twitter {
+            font-family: "Times New Roman", Times, serif; /* Ensures the special character displays correctly */
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .box {
+                height: 60px; /* Reduced box height on smaller screens */
+            }
+            .username p {
+                font-size: 24px; /* Further reduced font size for username on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="username">
+            <img src="IMAGE.jpeg" alt="Profile Image"> <!-- Replace with actual path to image -->
+            <p>Xx_quetips</p>
+        </div>
+        <div class="box">
+            <a href="https://m.twitch.tv/xx_quetips/home" target="_blank">Twitch</a>
+        </div>
+        <div class="box">
+            <a href="https://www.instagram.com/quetips_?igsh=eGJwa3N1OW42aTF4&utm_source=qr" target="_blank">Instagram</a>
+        </div>
+        <div class="box">
+            <a href="https://x.com/xx_quetips/status/1811392404269752535?s=46" target="_blank" class="twitter">𝕏</a>
+        </div>
+    </div>
+</body>
+</html>
